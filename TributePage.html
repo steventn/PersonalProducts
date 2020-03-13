@@ -21,17 +21,15 @@ h1{
 .container-1{
     background-color: white;
     align-items: center;
-
 }
 
 .container-2{
     grid-template-rows: 33% 33% 33%;
-    grid-row-gap: 0;
 }
 
 .header{
     position: relative;
-    top: 15px;
+    top: 12px;
 }
 
 .first-box{
@@ -42,10 +40,6 @@ h1{
     background-color: #edb870;
 }
 
-.header-2 {
-    position: relative;
-    top: 10px;
-}
 .biography{
     text-align: left;
     margin-right: 10px;
@@ -58,6 +52,12 @@ li {
 .third-box{
     background-color: #f7d8b4;
 }
+
+.works-manga{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding-bottom: 10px;
+}
 #artist-manga{
     margin-bottom: 2.5%;
     height: 33%;
@@ -65,8 +65,23 @@ li {
     border-radius: 50%;
 }
 #naruto-manga {
-    height: 100%;
+    max-height: 100%;
     width: 100%;
+}
+
+#naruto-splash {
+    height: 300px;
+    width: 200px;
+}
+
+#boruto-splash {
+    height: 300px;
+    width: 200px;
+}
+
+#samurai8-splash {
+    height: 300px;
+    width: 200px;
 }
 </style>
 </head>
@@ -89,7 +104,7 @@ li {
         </div>
         
         <div class="second-box" id="body-text">
-            <div class="header-2">
+            <div class="header">
                 <h2>Biography</h2>
             </div>
             <div class="biography">
@@ -105,8 +120,19 @@ li {
         </div>
 
         <div class="third-box" id="works">
-            <div class="header-3">
+            <div class="header">
             <h2>Popular Works</h2>
+            </div>
+            <div class="works-manga">
+                <div class="naruto-splash">
+                    <img id="naruto-splash" src="https://images-na.ssl-images-amazon.com/images/I/81-DvO03QeL.jpg">
+                </div>
+                <div class="boruto-splash">
+                    <img id="boruto-splash" src="https://images-na.ssl-images-amazon.com/images/I/91Q%2BiP7EnPL.jpg">
+                </div>
+                <div class="samurai8-splash">
+                    <img id="samurai8-splash" src="https://images-na.ssl-images-amazon.com/images/I/81-xoMbt4-L.jpg">
+                </div>
             </div>
         </div>
     </div>
