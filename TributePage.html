@@ -26,10 +26,12 @@ h1{
 
 .container-2{
     grid-template-rows: 33% 33% 33%;
+    grid-row-gap: 0;
 }
 
 .header{
-    margin-top: 2.5%s;
+    position: relative;
+    top: 15px;
 }
 
 .first-box{
@@ -38,6 +40,19 @@ h1{
 
 .second-box{
     background-color: #edb870;
+}
+
+.header-2 {
+    position: relative;
+    top: 10px;
+}
+.biography{
+    text-align: left;
+    margin-right: 10px;
+}
+
+li {
+    padding-bottom: 5px;
 }
 
 .third-box{
@@ -50,8 +65,8 @@ h1{
     border-radius: 50%;
 }
 #naruto-manga {
-    height: 75%;
-    width: 75%;
+    height: 100%;
+    width: 100%;
 }
 </style>
 </head>
@@ -74,11 +89,25 @@ h1{
         </div>
         
         <div class="second-box" id="body-text">
-            <p>Body Text</p>
+            <div class="header-2">
+                <h2>Biography</h2>
+            </div>
+            <div class="biography">
+                <ul>
+                <li><strong>November 1974: </strong> Born in Okayama, Japan</li>
+                <li><strong>1996:</strong> Honored with monthly 'Hop Step Award' after submitting pilot of manga 'Karakuri'</li>
+                <li><strong>September 1996:</strong> Serialized version of 'Naruto' was published</li>
+                <li><strong>November 2014:</strong> Over 200 million copies of 'Naruto' was sold by the time it ended</li>
+                <li><strong>December 2015:</strong> Annouced supervision of 'Bortuo' series</li>
+                <li><strong>2019:</strong> Announced new science fiction adventure series called 'Samurai 8: The Tale of Hachimaru'</li>
+                </ul>
+            </div>
         </div>
 
         <div class="third-box" id="works">
-            <p>Body Text</p>
+            <div class="header-3">
+            <h2>Popular Works</h2>
+            </div>
         </div>
     </div>
 
