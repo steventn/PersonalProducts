@@ -4,13 +4,47 @@
     @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
 
 body {
-    background-color: white;
     font-family: 'Open Sans', sans-serif;
+    background-color: #F1F0EA;
+}
+
+.container {
+    text-align: center;
+}
+
+#survey-form {
+    background-color: #534B52;
+    color: white;
 }
 
 </style>
 </head>
 
-<body id="main">
+<body>
+    <div class="container">
+        <div class=header>
+            <h1 id="title">Steven's Company Survey Form</h1>
+            <p id="description">Thank you for taking the time to provide with us your feedback for improvements!</p>
+        </div>
+    
+        <div class="container-1">
+            <form id="survey-form">
+                <div class="form-group">
+                    <label id="name-label" for="name"> Name </label>
+                    <input id="name" type="text" name="name" class="form-control" placeholder="Enter your name" required/> 
+                </div>
+                <div class="form-group">
+                    <label id="name-label" for="name"> Email </label>
+                    <input id="email" type="text" name="email" class="form-control" placeholder="Enter your email" required/> 
+                </div>
+                <div class="form-group">
+                    <label id="name-label" for="name"> Number </label>
+                    <input id="number" type="text" name="number" class="form-control" placeholder="Enter your number" required/> 
+                </div>
+                <div id="dropdown" class="form-group">
 
+                </div>
+            </form>
+        </div>
+     </div>
 </body>
