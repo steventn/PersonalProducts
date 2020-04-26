@@ -8,80 +8,113 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
-h1{
+h1 {
     font-size: 40px;
 }
 
 .container {
     display: grid;
     grid-template-columns: 50% 50%;
+}
+
+.container-1 {
+    background-color: white;
+    align-items: center;
+    justify-items: center;
+    margin-top: 25%;
+    margin-bottom: 25%;
+    
+}
+
+#img-div {
+    position: sticky;
+    top: 0;
+}
+
+.container-2 {
+    grid-template-rows: 33% 33% 33%;
+    overflow: auto;
     text-align: center;
 }
 
-.container-1{
-    background-color: white;
-    align-items: center;
-}
-
-.container-2{
-    grid-template-rows: 33% 33% 33%;
-}
-
-.header{
+.header {
     position: relative;
     top: 12px;
 }
 
-.first-box{
+.first-box {
     background-color: #fdf4af;
 }
 
-.second-box{
+.second-box {
     background-color: #edb870;
 }
 
-.biography{
+.biography {
     text-align: left;
     margin-right: 10px;
+}
+
+.wiki {
+    padding-bottom: 10px;
 }
 
 li {
     padding-bottom: 5px;
 }
 
-.third-box{
+.third-box {
     background-color: #f7d8b4;
 }
 
-.works-manga{
+.works-manga {
     display: grid;
     grid-template-columns: auto auto auto;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
 }
 #artist-manga{
     margin-bottom: 2.5%;
     height: 33%;
     width: 33%;
-    border-radius: 50%;
+
 }
-#naruto-manga {
-    max-height: 100%;
-    width: 100%;
+#image {
+    text-align: center;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    
+
 }
 
 #naruto-splash {
-    height: 300px;
-    width: 200px;
+    height: auto;
+    max-width: 90%;
 }
 
 #boruto-splash {
-    height: 300px;
-    width: 200px;
+    height: auto;
+    max-width: 90%;
 }
 
 #samurai8-splash {
-    height: 300px;
-    width: 200px;
+    height: auto;
+    max-width: 90%;
+}
+
+.fourth-box {
+    background-color: #e86e38;
+    text-align: left;
+    line-height: 15px;
+}
+
+.fourth-box blockquote {
+    font-weight: bold;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+
 }
 </style>
 </head>
@@ -89,8 +122,10 @@ li {
 <body id="main">
 <div class="container">
     <div class="container-1">
-        <img id="naruto-manga" src="https://img1.ak.crunchyroll.com/i/spire1/8201ee04e3484d2bd36689515ccda4c11567747365_full.jpg">
-        <figcaption id="img-caption">Manga author Kishimoto draws 20th anniversary illustration</figcaption>
+        <div id="img-div">
+            <img id="image" src="https://img1.ak.crunchyroll.com/i/spire1/8201ee04e3484d2bd36689515ccda4c11567747365_full.jpg">
+            <figcaption id="img-caption">Manga author Kishimoto draws 20th anniversary illustration</figcaption>
+        </div>
     </div>
 
     <div class="container-2" id="main-text">
@@ -103,7 +138,7 @@ li {
             </div>
         </div>
         
-        <div class="second-box" id="body-text">
+        <div class="second-box" id="tribute-info">
             <div class="header">
                 <h2>Biography</h2>
             </div>
@@ -116,6 +151,10 @@ li {
                 <li><strong>December 2015:</strong> Annouced supervision of 'Bortuo' series</li>
                 <li><strong>2019:</strong> Announced new science fiction adventure series called 'Samurai 8: The Tale of Hachimaru'</li>
                 </ul>
+            </div>
+            <div class="wiki">
+                <p>To learn more about Kishimoto's life, click <a  id="tribute-link" target="_blank" href="https://en.wikipedia.org/wiki/Masashi_Kishimoto">here</a> to go to his Wiki page. </p> 
+
             </div>
         </div>
 
@@ -134,6 +173,15 @@ li {
                     <img id="samurai8-splash" src="https://images-na.ssl-images-amazon.com/images/I/81-xoMbt4-L.jpg">
                 </div>
             </div>
+        </div>
+
+        <div class="fourth-box"> 
+            <blockquote cite="http://news.rediff.com/report/2009/sep/14/pm-pays-tribute-to-father-of-green-revolution-borlaug.htm">
+                <p>
+                    "Dattebayo!"
+                </p>
+                <cite>-- Masashi Kishimoto, Naruto, Vol. 01: Uzumaki Naruto</cite>
+             </blockquote>
         </div>
     </div>
 
