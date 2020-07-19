@@ -2,19 +2,43 @@
 <head>
 <style>
     @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
-
+* {
+    box-sizing: border-box;
+}
 body {
     font-family: 'Open Sans', sans-serif;
     background-color: #F1F0EA;
 }
 
 .container {
+    max-width: 66%;
+    margin: auto;
+}
+
+.header {
     text-align: center;
 }
 
 #survey-form {
     background-color: #534B52;
     color: white;
+    padding: 2.5rem;
+}
+
+label, input {
+    display: flex;
+    align-items: center;
+    margin-bottom: .5rem;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    height: 2rem;
+    padding: 0.375rem 0.75rem;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
 }
 
 </style>
@@ -23,27 +47,77 @@ body {
 <body>
     <div class="container">
         <div class=header>
-            <h1 id="title">Steven's Company Survey Form</h1>
-            <p id="description">Thank you for taking the time to provide with us your feedback for improvements!</p>
+            <h1 id="title">Steven's Survey Form</h1>
+            <p id="description">Thank you for taking the time to tell me about yourself!</p>
         </div>
     
         <div class="container-1">
             <form id="survey-form">
                 <div class="form-group">
-                    <label id="name-label" for="name"> Name </label>
-                    <input id="name" type="text" name="name" class="form-control" placeholder="Enter your name" required/> 
+                    <label id="name-label" for="name"> Name: </label>
+                    <input id="name" type="text" name="name" class="form-control" placeholder="Enter your name" min="10" max="10" required/> 
                 </div>
                 <div class="form-group">
-                    <label id="name-label" for="name"> Email </label>
+                    <label id="email-label" for="email"> Email: </label>
                     <input id="email" type="text" name="email" class="form-control" placeholder="Enter your email" required/> 
                 </div>
                 <div class="form-group">
-                    <label id="name-label" for="name"> Number </label>
-                    <input id="number" type="text" name="number" class="form-control" placeholder="Enter your number" required/> 
+                    <label id="number-label" for="number"> Age: </label>
+                    <input id="number" type="text" name="number" class="form-control" placeholder="Enter your age" required/> 
                 </div>
-                <div id="dropdown" class="form-group">
-
+                <div class="form-group">
+                    <label id="occupation-label" for="occupation"> What option best describes your current occupation: </label>
+                    <select id="dropdown" name="occupation" class="form-control" required>
+                        <option disabled selected value>Select current occupation</option>
+                        <option value="High School Student">High School Student</option>
+                        <option value="College Student">College Student</option>
+                        <option value="College Graduate/Unemployed">College Graudate/Unemployed</option>
+                        <option value="Grduate Student">Graduate Student</option>
+                        <option value="Part Time Employee">Part Time Employee</option>
+                        <option value="Full Time Employee">Full Time Employee</option>
+                    </select>
                 </div>
+                <div class="form-group">
+                    <label id="tech-label" for="tech">Are you in the tech field?</label>
+                    <label>
+                        <input id="tech" type="radio" name="tech" value="Yes" class="input-radio"/>Yes
+                    </label>
+                    <label>
+                        <input id="tech" type="radio" name="tech" value="No" class="input-radio"/>No
+                    </label>
+                </div>
+                <div class="form-group">
+                    <label id="hobby-label" for="hobby">What are you current favorite hobbies?</label>
+                    
+                    <label>
+                        <input id="drawing" type="checkbox" name="hobby" value="drawing" class="input-checkbox"/>Drawing
+                    </label>
+                    <label>
+                        <input id="video-games" type="checkbox" name="hobby" value="vide-games" class="input-checkbox"/>Playing video games
+                    </label>
+                    <label>
+                        <input id="music" type="checkbox" name="hobby" value="music" class="input-checkbox"/>Practicing music instruments
+                    </label>
+                    <label>
+                        <input id="writing" type="checkbox" name="hobby" value="writing" class="input-checkbox"/>Writing
+                    </label>
+                    <label>
+                        <input id="other" type="checkbox" name="hobby" value="other" class="input-checkbox"/>Other
+                    </label>
+                    <p>If selecting "Other", please comment in the text box below!</p>
+                    <textarea id="other-hobby" class="input-textarea" name="hobby" placeholder="Enter your hobby here..."></textarea>
+                </div>
+                <div class="form-group">
+                    <label id="amazing" for="last">Are you an amazing individual?</label>
+                    <label>
+                        <input id="amazing" type="radio" name="last" value="Yes" class="input-radio"/>Yes
+                    </label>
+                </div>
+                <div class="form-group">
+                    <p>Feel free to tell me anything else about yourself!</p>
+                    <textarea id="other-info" class="input-textarea" name="other-info" placeholder="Tell me about yourself here..."></textarea>
+                </div>
+                <button id="submit" type="submit"> Submit </button>
             </form>
         </div>
      </div>
