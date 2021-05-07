@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<head>
+    <style>
+        .main-container {
+            min-height: 720px;
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .sub-container-1 { 
+            background-color: #f4f5f6;
+            display: flex;
+            justify-content: left;
+            align-items: center;
+            flex-direction: row;
+            padding: 15px, 30px, 0, 30px;
+        }
+
+        .sub-container-2 {
+            display: flex;
+            flex-direction: row;
+            justify-content: left;
+            align-items: center;
+            padding: 15px, 25px, 0, 25px;
+        }
+
+        .sub-container-2a {
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .youre-away {
+            display:flex;
+            flex-direction: column;
+            justify-content: left;
+            align-items: left;
+        }
+
+        .away-row {
+            display:flex;
+            flex-direction: row;
+            text-align: left;
+        }
+
+        .youre-atwork {
+            display:flex;
+            flex-direction: column;
+            text-align: left;
+            align-items: left;
+        }
+
+        div[class="away-img"] {
+            border-radius: 4px;
+            border: 1px solid #cfd7de;
+        }
+
+        div[class="work-img"] {
+            border-radius: 4px;
+            border: 1px solid #cfd7de;
+        }
+
+        .sub-container-3 {
+            display: flex;
+            flex-direction: row;
+        }
+
+        #zipcode {
+            height: 40px;
+            text-align: left;
+            border-radius: 4px;
+            border: 1px solid #cfd7de;
+        }
+
+        .boarding-row {
+            display:flex;
+            flex-direction: column;
+            text-align: left;
+            align-items: left;
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <div class="main-container">
+            <div class="sub-container-1">
+                <p>I'm looking for service for my:</p>
+                <form>
+                    <label for="dog">
+                        <input id="pet-type" type="checkbox" name="pet-type"> Dog 
+                    </label>
+                    <label for="cat">
+                        <input id="pet-type" type="checkbox" name="pet-type"> Cat
+                    </label>
+                </form>
+            </div>
+            <div class="sub-container-2">
+                <div class="youre-away">
+                    <div>
+                        <p>For When You're Away</p>
+                    </div>
+                    <div class="away-row">
+                        <div class=away-img>
+                            <figure id="boarding">
+                                <img src="boarding.png" alt="boarding">
+                                <figcaption>Boarding</figcaption>
+                            </figure>
+                        </div>
+                        <div class=away-img>
+                            <figure id="house_sitting">
+                                <img src="house_sitting.png" alt="house_sitting">
+                                <figcaption>House Sitting</figcaption>
+                            </figure>
+                        </div>
+                        <div class=away-img>
+                            <figure id="dropin_visit">
+                                <img src="dropin_visit.png" alt="dropin_visit">
+                                <figcaption>Drop-In Visit</figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+                <div class="youre-atwork">
+                    <div>
+                        <p>For When You're At Work</p>
+                    </div>
+                    <div class="away-row">
+                        <div class="work-img">
+                            <figure id="daycare">
+                                <img src="daycare.png" alt="daycare">
+                                <figcaption>Doggy Day Care</figcaption>
+                            </figure>
+                        </div>
+                        <div class="work-img">
+                            <figure id="dog_walking">
+                                <img src="dog_walking.png" alt="dog_walking">
+                                <figcaption>Dog Walking</figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sub-container-3">
+                <div class="boarding-near">
+                    <div>
+                        <p>Boarding near</p>
+                    </div>
+                    <div class="boarding-row">
+                        <input type="text" id="zipcode" placeholder="Zip Code or Address"> 
+                    </div>
+                </div>
+                <div class="duration">
+                    <div>
+                        <p>For these days</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
