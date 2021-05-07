@@ -1,0 +1,48 @@
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: white;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+body {
+  background-color: hsl(233, 47%, 7%);
+  color: white;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  background-color: hsl(244, 38%, 16%);
+}
+
+.center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%)
+}
+
+.grid-item-1 {
+
+}
+
+#header {
+  background-color: black;
+  font-family: 'Inter';
+
+}
+
+#body {
+  background-color: gray;
+  font-family: 'Lexend Deca';
+}
+
+#stats {
+  display: grid;
+  background-color: brown;
+  grid-template-columns: 1fr 1fr 1fr; 
+}
