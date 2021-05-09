@@ -12,18 +12,39 @@ body {
   color: white;
 }
 
-.grid-container {
+.card {
   background-color: hsl(244, 38%, 16%);
-  display: grid;
-  grid-template-columns: 1fr auto; 
-  grid-template-rows: 1fr 1fr 1fr;
-  grid-template-areas: 
-    "header side"
-    "header side"
-    "foot side";
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+  display: flex;
+  flex-direction: row;
+  min-height: 400px;
+  margin: 100px 100px 100px 100px;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column; 
+  justify-content: space-evenly;
+}
+
+#header {
+  margin: 50px;
+}
+
+.card-stats {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.card-stats > div {
+
+}
+
+.card-image {
+  background-image: url("images/image-header-desktop.jpg");
+  background-repeat: no-repeat;
+  background-size: 500px;
+  min-width: 500px;
 }
 
 /* .center {
@@ -34,32 +55,12 @@ body {
   transform: translate(-50%, -50%)
 } */
 
-.grid-item-1 {
-  grid-area: header; 
-  
-}
-
-.grid-item-2 {
-  grid-area: side;
-}
-
-.grid-item-3 {
-  grid-area: foot; 
-}
-
 #header {
-  background-color: black;
   font-family: 'Inter';
 
 }
 
 #body {
-  background-color: gray;
   font-family: 'Lexend Deca';
 }
 
-#stats {
-  /* display: grid;
-  background-color: brown;
-  grid-template-columns: 1fr 1fr 1fr;  */
-}
